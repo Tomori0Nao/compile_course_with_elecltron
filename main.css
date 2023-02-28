@@ -1,0 +1,65 @@
+#left_side {
+    /* color: aqua; */
+    /* width: 50%; */
+    /* height: 60%; */
+    display: inline-block;
+    background-color: aqua;
+    overflow:overlay;
+}
+#right_side {
+    color: beige;
+    /* width: 50%; */
+    background-color: beige;
+    overflow:overlay;
+    /* height: 60%; */
+}
+#bottom {
+    color: red;
+    background-color: red;
+    /* width: 100%; */
+    /* grid-column-start: 1; */
+    /* grid-column-end: 2; */
+    grid-column-start: span 2;
+    overflow:overlay;
+    /* min-height: 20%; */
+    /* display: block; */
+}
+#container {
+    white-space:pre;
+    height: 100%;
+    width: 100%;
+    background-color: green;
+    position: absolute;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-auto-flow:colunm;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    /* justify-content:space-between; */
+}
+body {
+    background-color: black;
+    /* border-style: none;
+    border */
+    margin: 0;
+    padding: 0;
+}
+/* html {
+    border-style: none;
+} */
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #FF2A68;
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffcacaff;
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}

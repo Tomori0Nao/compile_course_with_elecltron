@@ -1,0 +1,38 @@
+{
+  "name": "my-electron-app",
+  "version": "1.0.0",
+  "description": "my-electron-app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tomori0Nao/compile_course_with_elecltron.git"
+  },
+  "author": "Tomori_Nao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Tomori0Nao/compile_course_with_elecltron/issues"
+  },
+  "homepage": "https://github.com/Tomori0Nao/compile_course_with_elecltron#readme",
+  "dependencies": {
+    "cnpm": "^9.0.1",
+    "npm": "^8.19.2"
+  },
+  "devDependencies": {
+    "electron": "^23.1.1",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+       "appId": "com.example.my-electron-app",  
+       "productName": "My Electron App",   
+       "directories": {     "output": "dist"   },   
+       "files": [     "main.js",     "package.json",     "index.html",     "assets/**/*"   ],   
+       "asar": true,   "mac": {     "target": "dmg",     "icon": "assets/icon.icns"   },   
+       "win": {     "target": "nsis",     "icon": "assets/icon.ico"   },   
+       "linux": {     "target": "deb",     "icon": "assets/icon.png"   } 
+      }
+}
